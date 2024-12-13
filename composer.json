@@ -1,0 +1,6 @@
+{
+    "require": {
+        "davtur19/turibot": "^1.0",
+        "sunra/php-simple-html-dom-parser": "^1.5"
+    }
+}
