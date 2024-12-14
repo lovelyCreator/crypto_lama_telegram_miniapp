@@ -1,0 +1,1 @@
+<button class="task-button1-earn"><a href="https://t.me/<?php echo $botconfig->add_task_url; ?>">+ Add Task</a></button>

@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --font-family: "Gilroy", sans-serif;
+    --second-family: "Geologica", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --token: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    --accent: linear-gradient(180deg, #2FB8FF, #9EECD9);
+    --cyan-grad: linear-gradient(180deg, #2FB8FF -160%, #9EECD9 100%);
+} 
+
+body-earn {
+    font-family: 'Helvetica', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #031223;
+    color: white;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content-earn {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-container-earn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Для вертикального выравнивания */
+    align-items: center; /* Центрирование по горизонтали */
+    overflow-y: auto; /* Используем auto для вертикальной прокрутки */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.content-container-earn::-webkit-scrollbar {
+    display: none;  /* Safari и Chrome */
+}
+
+/* Контейнер для балансирования */
+.balance-container-earn {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Контейнер для картинки с золотым свечением */
+.glowing-image-container-earn {
+    position: relative;
+    display: inline-block;
+}
+
+/* Сама картинка */
+.glowing-image-container-earn img {
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    display: block;
+    margin: auto; /* Добавлено для центрирования */
+}
+
+/* Свечение */
+.glowing-image-container-earn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid transparent;
+    border-radius: 50%; /* Установлено как круг для круглых изображений */
+    box-shadow: 0px 0px 30px 20px rgb(237, 215, 118, 0.25);
+    pointer-events: none; /* Чтобы свечение не мешало взаимодействию с картинкой */
+}
+
+.balance-container1-earn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.balance-container2-earn {
+    margin: 25px 20px 12px 0;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+
+.balance-container3-earn {
+    margin: 10px 20px 12px 0;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+
+.task-container-earn {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 12px;
+    margin-bottom: 20px; 
+    align-self: center; 
+    box-sizing: border-box;
+}
+
+.task-earn {
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    position: relative;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow-y: hidden;
+}
+.task-earn .icon-earn {
+    margin-left: 6px;
+    align-self: center;
+    margin-right: -4px;
+}
+
+.task-earn .icon-y-earn {
+    align-self: center;
+    margin-right: -18px;
+}
+
+.task-earn .icon-friends-earn {
+    margin-right: -8px;
+    align-self: center;
+}
+
+.task-earn .icon-x-earn {
+    margin-right: -5px;
+    align-self: center;
+}
+
+.task-earn .icon-f-earn {
+    margin-left: 5px;
+    align-self: center;
+}
+
+.details-earn {
+    flex-grow: 1;
+    margin: auto 0 auto 0;
+    overflow: visible;
+}
+
+.title-earn span {
+    font-size: 16px;
+    align-self: center;
+    font-family: 'Geologica';
+}
+.reward-earn {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.reward-earn img {
+    margin: 1px 4px 1px 0;
+    width: 20px;
+    height: 20px;
+}
+.reward-earn span {
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+
+}
+.details-earn {
+    flex-grow: 1;
+    padding-left: 10px;
+    margin-right: auto;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.task-details-earn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #031223;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 18px 20px 18px;
+    border-radius: 28px 28px 0 0;
+    transform: translateY(100%);
+    z-index: 1000000;
+    text-align: center;
+    visibility: hidden; /* Скрываем элемент по умолчанию */
+}
+
+.task-details-earn.active {
+    visibility: visible; /* Делаем элемент видимым */
+    animation: slideUp 0.2s ease-in-out forwards; /* Запускаем анимацию появления */
+    box-shadow: 0px -4px 20px 0px rgba(124, 221, 229, 0.6);
+    border-top: 2px solid #7CDDE5;
+}
+
+.task-details-earn.closing {
+    animation: slideDown 0.2s ease-in-out forwards;
+    transition: visibility 0s 0.2s;
+}
+
+
+
+
+.task-details-earn img {
+    width: 82px;
+    height: 82px; /* Adjust the size of the image as needed */
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.task-details-earn .task-name-earn {
+    margin: 0 0 10px 0.5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+.task-details-earn .task-description-earn {
+    margin-bottom: 26px;
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.task-details-earn .task-description2-earn {
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.task-details-earn .task-description2-earn img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.task-details-earn .task-reward-earn {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.task-details-earn .task-reward-earn span{
+    margin: 2px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.task-details-earn .task-reward-earn span2{
+    margin: 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.task-details-earn .task-reward-earn span3{
+    border-radius: 2.5px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 13.5px 8px 13.5px 0;
+    width: 5px;
+    height: 5px;
+}
+.task-details-earn .task-reward-earn img {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    padding-top: 10px;
+
+}
+.task-button-img-earn{
+    margin: 21.2px 9.5px 0 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.task-details-earn .task-button-earn {
+    border-radius: 12px;
+    background: #1591A1;
+    margin-bottom: 12px;
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.task-details-earn .task-button1-earn {
+    border-radius: 12px;
+    background: #1591A1;
+    margin-bottom: 12px;
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.task-button1-earn {
+    border-radius: 12px;
+    background: #1591A1;
+    margin-bottom: 12px;
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.task-details-earn .close-button-earn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    background: #293746;
+    display: flex;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.task-details-earn .close-button-earn img {
+    width: 20px;
+    height: 20px;
+}
+.overlay-earn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+.overlay-earn.active {
+    display: block;
+}
+
+/* CSS для нового оверлея 
+.daily-reward-overlay-earn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #031223;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 18px 20px 18px;
+    border-radius: 28px 28px 0 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000000;
+    text-align: center;
+    overflow-y: auto;
+    height: 688px;
+}
+
+@media (max-height: 688px) {
+    .daily-reward-overlay-earn {
+        position: fixed; /* Снимаем фиксацию для маленьких экранов */
+        bottom: 0;
+        height: 90vh;
+    }
+}
+
+.daily-reward-overlay-earn.active {
+    transform: translateY(0);
+    box-shadow: 0px -4px 20px 0px rgba(124, 221, 229, 0.6);
+    border-top: 2px solid #7CDDE5;
+}
+*/
+
+.daily-reward-overlay-earn.closing {
+    animation: slideDown 0.2s ease-in-out forwards;
+    transition: visibility 0s 0.2s;
+}
+
+.daily-reward-overlay-earn .close-button-earn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    background: #293746;
+    display: flex;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.daily-reward-overlay-earn .close-button-earn img {
+    width: 20px;
+    height: 20px;
+}
+
+.daily-reward-overlay-earn .title-earn {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+
+.daily-reward-overlay-earn .icon-earn {
+    margin: -20px 0 20px 0;
+    align-self: center;
+}
+
+.daily-reward-overlay-earn .rewards-container-earn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.daily-reward-overlay-earn .rewards-container-earn .reward-item-earn {
+    width: 94px;
+    height: 94px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 12px;
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Geologica';
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+@media (max-height: 688px) {
+    .daily-reward-overlay-earn .rewards-container-earn .reward-item-earn {
+        height: 11vh;
+    }
+}
+
+.daily-reward-overlay-earn .rewards-container-earn .reward-item-earn.active {
+    background: linear-gradient(180deg, rgb(66, 80, 92), rgb(41, 54, 68));
+    box-shadow: 0px 0px 10px 1px rgba(136, 226, 225, 0.4);
+    border: 1.5px solid #73d8e7;
+}
+
+.daily-reward-overlay-earn .rewards-container-earn .reward-item-earn.claimed {
+    opacity: 0.5;
+    border: none;
+    background: linear-gradient(180deg, rgb(66, 80, 92), rgb(41, 54, 68));
+}
+
+.daily-reward-overlay-earn .task-button1-earn {
+    border-radius: 12px;
+    background: #1591A1;
+    margin-bottom: 12px;
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    margin-top: auto;
+}
+
+.reward-item-earn .description1-earn {
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.reward-item-earn .description2-earn {
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.reward-item-earn .coin-earn {
+    width: 17px;
+    height: 17px;
+    margin: 1px 4px 1px 0;
+}
+
+.reward-item-earn .container-earn {
+    display: flex;
+    flex-direction: row;
+}
+
+.reward-item-earn {
+    gap: 8px;
+}
+
+
+.menu-earn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #282B30;
+    padding: 5px 5px;
+    border-radius: 20px;
+    width: 90%;
+}
+.menu-earn button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-earn button img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+.menu-earn button.active {
+    background-color: #1C1F24;
+    border-radius: 20px;
+}
+#rewardsContainer2 {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переходить на следующую строку, если они не помещаются */
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    margin-bottom: 20px;
+}
+.svg-container-earn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    overflow: visible;
+    margin-right: -10px;
+  }
+  
+.svg-container-earn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.task-code-container {
+    width: 95%;
+    margin-top: 30px;
+    background-color: #0b1929;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 40px;
+  }
+  .task-code-container.keyboard-open {
+    margin-bottom: 20px; 
+  }
+
+
+  
+  .task-code-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+  .task-code-row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+  .task-code-row3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+  
+  .task-watch-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 8px;
+    width: 74px;
+    height: 38px;
+    background-color: #1591a1;;
+    border: none;
+    cursor: pointer;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+  
+  .task-input-earn {
+    border-radius: 8px;
+    padding: 12px 15px;
+    width: 100%;
+    height: 20px;
+    background: #162434;
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.4);
+    border: none;
+  }
+  
+  .task-submit-button {
+    border-radius: 8px;
+    padding: 10px 14px;
+    width: 100%;
+    height: 44px;
+    background: #1591a1;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    border-color: transparent;
+  }
+  
+  .task-code-separator {
+    border: 0.50px solid #233850;
+    width: 100%;
+    height: 0px;
+    margin-bottom: 15px;
+  }
+  
+  .task-input-earn:focus {
+    outline: none;
+    border: none; /* измените цвет и стиль границы по своему усмотрению */
+  }
+  .tab-button-earn {
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.6);
+    flex: 1;
+    height: 40px;
+    margin: 0 4px;
+    background: linear-gradient(180deg, #1c3040 0%, #122434 100%);
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 20%;
+}
+
+.tab-button-earn::before {
+    content: '';
+    position: absolute;
+    top: -1.5px;
+    left: -1.5px;
+    right: -1.5px;
+    bottom: -1.5px;
+    border-radius: 9px;
+    z-index: -1;
+}
+
+.tab-button-earn.active {
+    overflow-wrap: break-word;
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.tab-button-earn.active::before {
+    background: linear-gradient(180deg, #00FFFF, #00BFFF);
+    box-shadow: 0px 0px 8px 3px rgba(101, 210, 237, 0.25);
+}
