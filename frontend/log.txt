@@ -1,0 +1,36 @@
+Session Data: Array
+(
+    [chat_id] => 1024146842
+    [token] => 7882226963
+    [firstname] => Slow
+    [lastname] => Worker
+    [premium] => 
+)
+
+Session Data: Array
+(
+    [chat_id] => 1024146842
+    [token] => 7882226963
+    [firstname] => Slow
+    [lastname] => Worker
+    [premium] => 
+)
+
+Session Data: Array
+(
+    [chat_id] => 1024146842
+    [token] => 7882226963
+    [firstname] => Slow
+    [lastname] => Worker
+    [premium] => 
+)
+
+Session Data: Array
+(
+    [chat_id] => 1024146842
+    [token] => 7882226963
+    [firstname] => Slow
+    [lastname] => Worker
+    [premium] => 
+)
+
