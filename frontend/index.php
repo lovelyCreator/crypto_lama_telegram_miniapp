@@ -328,36 +328,6 @@ $userinfo = $user->userinfo();
                 <div class="reward-amount" id="rewardAmount"></div>
                 <!-- <div class="reward-description">Bot mined some coins for you</div><button class="reward-button">Thanks</button> -->
             </div>
-            <div class="crypto-overlay ">
-                <div class="crypto-reward-details "><button class="close-button"><img class="img"
-                            src="./assets/close_button.svg" alt="Close"></button>
-                    <!-- <div style="border-radius: 100px; border: 4px solid rgb(3, 18, 35); background: rgb(20, 33, 48); position: absolute; left: 50%; top: 27px; transform: translateX(-50%); display: flex; padding: 8px; width: 82px; height: 82px; box-sizing: border-box; align-items: center; text-align: center; justify-content: center; overflow: hidden;"><img src="./assets/Loading_Background.png" style="border-radius: 0px 0px 32px 32px; transform: scale(0.19); margin-bottom: 10px;"></div> -->
-                    <!-- <div style="border-radius: 16px; background: transparent; margin-bottom: 5px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 0px 28px; width: 927.9px; margin-top: 50px; box-sizing: border-box;"> -->
-                    <div
-                        style="margin-bottom: 10px; display: flex; flex-direction: row; width: fit-content; box-sizing: border-box;">
-                        <span
-                            style="margin: 4px 0px 0px; display: inline-block; overflow-wrap: break-word; font-family: Geologica; font-weight: 400; font-size: 30px; color: rgb(255, 255, 255);">While
-                            you were away</span></div>
-                    <div
-                        style="margin-bottom: 10px; display: flex; flex-direction: row; width: fit-content; box-sizing: border-box;">
-                        <span
-                            style="margin: 0px; display: inline-block; overflow-wrap: break-word; font-family: Geologica; font-weight: 400; font-size: 30px; color: rgb(255, 255, 255);">your
-                            lamaz earned</span></div>
-                    <div
-                        style="margin-bottom: 0px; display: flex; flex-direction: row; width: fit-content; box-sizing: border-box; align-items: center; justify-content: center;">
-                        <img src="./assets/coin_icon.png" style="margin-right: 12px; width: 60px; height: 60px;"><span
-                            style="margin: 0px 0px 6px; display: inline-block; overflow-wrap: break-word; font-family: Geologica; font-weight: 400; font-size: 30px; color: rgb(255, 255, 255);">0</span>
-                    </div>
-                </div>
-                <button class="crypto-reward-button"
-                    style="border-radius: 16px; background: rgb(21, 145, 161); margin-right: 5px; border: none; display: flex; text-align: center; justify-content: center; align-items: center; width: 927.9px; height: 50px; box-sizing: border-box; overflow-wrap: break-word; font-family: Geologica; font-weight: 500; font-size: 16px; letter-spacing: 0.3px; color: rgb(255, 255, 255);">Thanks,
-                    CRYPTOLAMAZ<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" style="margin-left: 3px;">
-                        <path
-                            d="M1.6665 7.61413C1.6665 11.6666 5.01603 13.8261 7.46795 15.7589C8.33317 16.441 9.1665 17.0832 9.99984 17.0832C10.8332 17.0832 11.6665 16.441 12.5317 15.7589C14.9836 13.8261 18.3332 11.6666 18.3332 7.61413C18.3332 3.56168 13.7497 0.687765 9.99984 4.58374C6.24997 0.687765 1.6665 3.56168 1.6665 7.61413Z"
-                            fill="white"></path>
-                    </svg></button>
-            </div>
         </div>
         <div class="overlay" id="overlay"></div>
         <img src="./assets/bronze-background.png" class="overlay-bg" alt="Image 1"
